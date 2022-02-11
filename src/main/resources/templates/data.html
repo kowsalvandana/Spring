@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body bgcolor="Green">
+<center>
+<h3>PassangerDetails</h3>
+<table border="1">
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		
+		
+	</tr>
+	<tr th:each="l:${list}">
+		<td th:text="${l.id}"></td>
+		<td th:text="${l.name}"></td>
+		
+		
+	</tr>
+</table>
+<span th:text="${message}"></span>
+<a th:href="@{/passanger/reg}">Add More Details</a>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

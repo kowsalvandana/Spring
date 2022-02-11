@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body bgcolor="Blue">
+<h2>Passanger Details</h2>
+<form th:action="@{/passanger/save}" method="POST" th:object="${passanger}" >
+<pre>
+Enter Passanger id :<input type="text" th:field="*{id}" required><br>
+
+Enter Passanger name :<input type="text" th:field="*{name}" required><br>
+
+
+<input type="submit" value="register">
+
+
+
+</body>
+</html>
